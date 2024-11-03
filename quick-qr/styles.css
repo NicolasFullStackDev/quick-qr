@@ -1,0 +1,66 @@
+:root {
+	--primary-color: #b0dae0;
+	--primary-color-hover: #a2c4c9;
+	--text-light: #dde8f2;
+	--text-dark: #0c343d;
+	--border-radius: 0.5rem;
+}
+.qqr-body {
+	color: var(--text-dark);
+	font-family: 'Segoe UI', sans-serif;
+	text-align: center;
+	padding: 0.5rem;
+	background-color: #f9f9f9; /* Light background for contrast */
+}
+.qqr-h1 {
+	font-family: 'Chakra Petch', sans-serif;
+	font-weight: 700;
+	font-size: 2rem;
+}
+.qrr-a {
+	text-decoration: none;
+}
+.qqr-input {
+	border: 2px solid var(--primary-color);
+	border-radius: var(--border-radius);
+	width: 80%;
+	padding: 0.5rem;
+	margin: 1rem 0;
+	font-size: 1rem;
+	transition: border-color 0.3s;
+}
+.qqr-input:focus {
+	outline: none;
+	border-color: var(--primary-color-hover);
+}
+.qqr-qrcode {
+	padding: 0.5rem;
+	min-width: 128px;
+	min-height: 128px;
+}
+.qqr-container {
+	max-width: 500px;
+	margin: 0.1rem auto;
+	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: var(--border-radius);
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+}
+.qqr-btn {
+	color: var(--text-dark) !important;
+	background-color: var(--primary-color) !important;
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: var(--border-radius);
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 0.8rem;
+	transition: background-color 0.3s, border-color 0.3s;
+	display: inline-block;
+	margin: 0.5rem 0;
+}
+.qqr-btn:hover {
+	cursor: pointer;
+	background-color: var(--primary-color-hover) !important;
+}

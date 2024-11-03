@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick QR | Extension</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&display=swap" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="jQuery.min.js"></script>
+    <script type="text/javascript" src="qrCode.min.js"></script>
+    <script type="text/javascript" src="htmlToCanvas.min.js"></script>
+</head>
+<body class="qqr-body">
+    <div class="qqr-container">
+        <h1 class="qqr-h1">Quick QR</h1>
+        <input type="text" id="textInput" class="qqr-input" placeholder="Link ou texto" />
+        <a id="qqrBtnGenQr" class="qqr-a"><div class="qqr-btn">QR Code do link acima</div></a>
+        <a id="qqrBtnQrCurrentUrl" class="qqr-a"><div class="qqr-btn">QR Code da Guia Atual</div></a>
+		<a id="qqrBtnDownloadQr" class="qqr-a"><div class="qqr-btn">Download QR Code</div></a>
+        <div id="qrcode" class="qqr-qrcode"></div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

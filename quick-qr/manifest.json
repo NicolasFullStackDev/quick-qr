@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "QuickQR",
+    "author": "Nicolas Martins",
+    "version": "1.0.1",
+    "description": "Gere seu QRCode de maneira rápida e segura.",
+	"permissions": ["tabs"],
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": {
+            "24": "icons/icon-24.png",
+            "36": "icons/icon-36.png",
+            "48": "icons/icon-48.png",
+            "128": "icons/icon-128.png"
+        }
+    },
+    "icons": {
+        "24": "icons/icon-24.png",
+        "36": "icons/icon-36.png",
+        "48": "icons/icon-48.png",
+        "128": "icons/icon-128.png"
+    },
+    "optional_host_permissions": [
+        "https://*/*",
+        "http://*/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
+}
